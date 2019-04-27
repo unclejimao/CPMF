@@ -14,6 +14,10 @@
 ## Netflix数据集
 这个数据集来自于电影租赁网址Netflix的数据库。Netflix于2005年底公布此数据集并设立百万美元的奖金(netflix prize)，征集能够使其推荐系统性能上升10％的推荐算法和架构。这个数据集包含了480189个匿名用户对大约17770部电影作的大约10亿次评分。
 
+目前kaggle官网提供该数据集的下载
+
+数据集地址   https://www.kaggle.com/netflix-inc/netflix-prize-data
+
 文章使用数据集为Netflix数据集，由于算力资源限制，本项目选择MovieLens数据集作为实验数据集。
 ## MovieLens 数据集
 MovieLens数据集包含多个用户对多部电影的评级数据，也包括电影元数据信息和用户属性信息。
@@ -39,8 +43,10 @@ http://files.grouplens.org/datasets/movielens/
      Users.dat： 性别、年龄、职位、邮编
 
      Movies.dat: 电影id、标题、流派
-     
-##本项目数据集
+
+  
+## 本项目数据集
+
 本项目数据集基于MovieLens 数据集1M版本数据，对Ratings.dat做了处理，得到了程序所需要的rating_table.csv
 
 # cpmf.py
@@ -62,5 +68,5 @@ http://files.grouplens.org/datasets/movielens/
 
 U.csv && V.csv 分别为训练得到的用户特征矩阵和电影特征矩阵。
 
-# [remote rejected] master -> master (pre-receive hook declined)
-总是push rejected，不知道为什么
+### [remote rejected] master -> master (pre-receive hook declined)
+总是push rejected，不知道为什么。删除本地仓库，重新clone
